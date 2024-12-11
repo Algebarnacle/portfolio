@@ -1,4 +1,5 @@
 import HomeContent from "@/components/Content";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
 import { NextFont } from "@next/font";
@@ -17,6 +18,7 @@ export default function Home() {
         <Navigation page={PAGE_TITLE} />
         <HomeContent />
       </div>
+      <Footer />
     </div>
   );
   
