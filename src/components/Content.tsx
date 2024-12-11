@@ -1,10 +1,10 @@
 export default function HomeContent() {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
             <div
-            className="bg-gray-800 text-white text-base flex flex-row border-2 border-accent rounded-lg justify-between w-full mb-8"
+            className="bg-gray-800 text-white text-base border-2 border-accent rounded-lg w-full mb-8 p-4"
             >
-                
+                <div className="text-5xl text-accent align-middle text-center">Welcome to My Portfolio!</div>
             </div>
 
 
