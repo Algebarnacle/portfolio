@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faF } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
 
@@ -10,7 +11,8 @@ export default function Footer() {
     return (
         <div className="bg-primary w-full flex flex-row items-center justify-between py-8 px-12 text-secondary">
             <div className="text-xl">
-                <FontAwesomeIcon icon={faF} className="fa-fw" size="2x" />
+                <FontAwesomeIcon icon={faLinkedin} className="fa-fw" size="2x" />
+                <FontAwesomeIcon icon={faGithub} className="fa-fw" size="2x" />
             </div>
             <div className="text-xl flex flex-col items-end">
                 <div>{FULL_NAME}</div>
