@@ -9,12 +9,12 @@ export default function Footer() {
     const DATE_STRING:string = "December, 2024"
 
     return (
-        <div className="bg-primary w-full flex flex-row items-center justify-between py-8 px-12 text-secondary">
+        <div className="bg-primary w-full flex flex-row items-center justify-center ex-small:justify-between py-8 px-12 text-secondary">
             <div className="text-xl flex flex-row gap-4">
                 <FontAwesomeIcon icon={faLinkedin} className="fa-fw cursor-pointer" size="2x" />
                 <FontAwesomeIcon icon={faGithub} className="fa-fw cursor-pointer" size="2x" />
             </div>
-            <div className="text-xl flex flex-col items-end">
+            <div className="text-xl flex-col items-end hidden ex-small:flex">
                 <div>{FULL_NAME}</div>
                 <div>{DATE_STRING}</div>
             </div>

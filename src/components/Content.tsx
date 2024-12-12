@@ -9,11 +9,11 @@ export default function HomeContent() {
                 <div className="text-5xl text-accent align-middle text-center">Welcome to My Portfolio!</div>
             </div>
             <div
-            className="bg-gray-800 text-white text-base flex flex-row border-2 border-accent rounded-lg justify-between w-full mb-8 items-center"
+            className="bg-gray-800 text-white text-base flex flex-row border-2 border-accent rounded-lg justify-center large:justify-between w-full mb-8 items-center"
             >
-                <div className="flex flex-col ml-8 my-8">
+                <div className="flex flex-col m-4 large:m-0 large:ml-8 large:my-8">
                     <div className="text-2xl text-accent">About Me</div>
-                    <div className="mt-2 max-w-lg">
+                    <div className="mt-2 max-w-sm large:max-w-lg">
                         Hello! My name is Gordon Hutchinson, I am 19 years old, and I am (currently) a year two IT Web Programming student at 
                         the Nova Scotia Community College Truro Campus. <br /><br />
                         I started coding on Scratch when I was nine and I loved it. I moved on to TI-Basic and Python in my 
@@ -22,7 +22,7 @@ export default function HomeContent() {
                         I look forward to pursuing a career in programming and I cannot wait to learn more!
                     </div>
                 </div>
-                <div className="mr-8 flex flex-col gap-2">
+                <div className="mr-8 flex-col gap-2 hidden large:flex">
                     <Image className="rounded-md" src={"/images/carter-and-i.jpg"} width={210} height={280} alt="Myself holding my friend and classmate Carter" />
                     <div className="text-gray-500 text-sm font-normal text-wrap max-w-52">Me, carrying my friend Carter after we won a local coding competition</div>
                 </div>
@@ -92,15 +92,15 @@ export function ProjectsContent() {
 function Project({imageSrc, description, title, height, width, alt}:{imageSrc:string, description:string, title:string, height:number, width:number, alt:string}) {
     return (
         <div
-            className="bg-gray-800 text-white text-base flex flex-row border-2 border-accent rounded-lg justify-between w-full mb-8 items-center"
+            className="bg-gray-800 text-white text-base medium:text-sm large:text-base flex flex-row border-2 border-accent rounded-lg justify-center medium:justify-between w-full mb-8 items-center"
             >
-                <div className="flex flex-col ml-8 my-8">
+                <div className="flex flex-col m-4 small:m-0 small:ml-8 small:my-8">
                     <div className="text-2xl text-accent">{title}</div>
-                    <div className="mt-2 max-w-lg">
+                    <div className="mt-2 max-w-sm medium:max-w-xs large:max-w-lg">
                         {description}
                     </div>
                 </div>
-                <div className="mr-8 my-8">
+                <div className="mr-8 my-8 hidden medium:block">
                     <Image src={`/images/` + imageSrc} width={250} height={250 * height / width} alt={alt} className="rounded-md" />
                 </div>
             </div>

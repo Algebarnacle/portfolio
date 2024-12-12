@@ -14,7 +14,7 @@ export default function Projects() {
     return (
         <div className={`flex flex-col ${portfolio_font.className}`}>
             <Header title={PAGE_TITLE} />
-            <div className="flex flex-row bg-gray-900 p-8">
+            <div className="flex flex-col small:flex-row bg-gray-900 p-8">
                 <Navigation page={PAGE_TITLE} />
                 <ProjectsContent />
             </div>
