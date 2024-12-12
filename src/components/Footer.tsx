@@ -10,9 +10,9 @@ export default function Footer() {
 
     return (
         <div className="bg-primary w-full flex flex-row items-center justify-between py-8 px-12 text-secondary">
-            <div className="text-xl">
-                <FontAwesomeIcon icon={faLinkedin} className="fa-fw" size="2x" />
-                <FontAwesomeIcon icon={faGithub} className="fa-fw" size="2x" />
+            <div className="text-xl flex flex-row gap-4">
+                <FontAwesomeIcon icon={faLinkedin} className="fa-fw cursor-pointer" size="2x" />
+                <FontAwesomeIcon icon={faGithub} className="fa-fw cursor-pointer" size="2x" />
             </div>
             <div className="text-xl flex flex-col items-end">
                 <div>{FULL_NAME}</div>

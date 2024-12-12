@@ -2,8 +2,8 @@ import HomeContent from "@/components/Content";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
-import { NextFont } from "@next/font";
-import { Sofia_Sans } from "@next/font/google";
+import { NextFont } from "next/dist/compiled/@next/font";
+import { Sofia_Sans } from "next/font/google";
 
 const portfolio_font:NextFont = Sofia_Sans({ weight: "400", subsets: ["latin"] });
 

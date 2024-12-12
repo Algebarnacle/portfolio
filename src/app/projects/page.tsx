@@ -1,9 +1,9 @@
-import HomeContent from "@/components/Content";
+import { ProjectsContent } from "@/components/Content";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
-import { NextFont } from "@next/font";
-import { Sofia_Sans } from "@next/font/google";
+import { NextFont } from "next/dist/compiled/@next/font";
+import { Sofia_Sans } from "next/font/google";
 
 const portfolio_font:NextFont = Sofia_Sans({ weight: "400", subsets: ["latin"] });
 
@@ -16,7 +16,7 @@ export default function Projects() {
             <Header title={PAGE_TITLE} />
             <div className="flex flex-row bg-gray-900 p-8">
                 <Navigation page={PAGE_TITLE} />
-                <HomeContent />
+                <ProjectsContent />
             </div>
             <Footer />
         </div>
