@@ -51,6 +51,40 @@ export function ProjectsContent() {
                 height={475}
                 alt="Image of the items in our Minecraft Mod"
             />
+            <Project
+                description={`I created this portfolio website you are currently seeing to display all of the projects 
+                    I have worked on by myself and during my time in college. The site was built with NextJS using MongoDB 
+                    to store the data on all of the projects. Icons were provided by FontAwesome and styling is done with 
+                    the Tailwind CSS library.`}
+                title="My Portfolio Website"
+                imageSrc="portfolio-image.png"
+                width={985}
+                height={1888}
+                alt="Image of my portfolio website"
+            />
+            <Project
+                description={`For this NextJS project in my Full Stack Programming course, I had used a pre-existing MongoDB 
+                    database populated with a collection of technologies used throughout our college program. I added to 
+                    this a collection of all of the courses referenced by these technologies and the functionality to 
+                    add, remove, and edit the technologies and courses.`}
+                title="Technology Roster: Admin"
+                imageSrc="nextjs-proj.png"
+                width={894}
+                height={1540}
+                alt="Image of the final project for my Full Stack Programming course"
+            />
+            <Project
+                description={`In my Web Application Programming course, we learned about and worked with ASP.NET. For the 
+                    final project of that course, we were tasked with developing an app that could store many links 
+                    divided into four different categories. Links could be pinned to the top of the category or unpinned. 
+                    The application also has an administration side with a validated login page. On the administration 
+                    end, one can add, edit, or remove the links and edit the category names.`}
+                title="Link Collection App"
+                imageSrc="asp-proj.png"
+                width={990}
+                height={1829}
+                alt="Image of the final project for my Web Application Programming course"
+            />
         </div>
     );
 }
@@ -66,8 +100,8 @@ function Project({imageSrc, description, title, height, width, alt}:{imageSrc:st
                         {description}
                     </div>
                 </div>
-                <div className="mr-8">
-                    <Image src={`/images/` + imageSrc} width={200} height={200 * height / width} alt={alt} className="rounded-md" />
+                <div className="mr-8 my-8">
+                    <Image src={`/images/` + imageSrc} width={250} height={250 * height / width} alt={alt} className="rounded-md" />
                 </div>
             </div>
     );
